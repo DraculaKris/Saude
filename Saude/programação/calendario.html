@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/programação/calendario.css">
+    <script defer src="/programação/calendario.js"></script>
+    <title>Saúde em dia</title>
+</head>
+<body>
+    <header>
+
+        <nav class="nav">
+            <ul>
+              <li><a href="/programação/inicio/index.html">Voltar</a></li>
+            </ul>
+          </nav>
+
+        <div class="titulo">
+        <h2>Objetivos do Dia</h2>
+        </div>
+        
+    </header>
+    <main>
+        <div class="event-form">
+            <label for="eventDate">Data:</label>
+            <input type="date" id="eventDate">
+            <label for="eventDescription">Objetivos do dia:</label>
+            <input type="text" id="eventDescription">
+            <button id="addEventBtn">Adicionar objetivo</button>
+        </div>
+        <div class="event-list" id="eventList">
+            <!-- Lista de eventos adicionados -->
+        </div>
+        <div class="progress">
+            <p>Objetivos Concluídos: <span id="completedCount">0</span></p>
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        
+    </main>
+</body>
+</html>

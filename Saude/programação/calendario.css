@@ -1,0 +1,111 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5af;
+}
+
+/* Estilos do Cabeçalho */
+header {
+  display: flex;
+  background-color: #69db34;
+  color: #fff;
+  padding: 1rem;
+  font-size: 20px;
+  border-bottom: 4px solid #29b94f;
+}
+
+.nav{
+  justify-content: center;
+  margin-top: 10px;
+}
+
+header h2{
+  justify-content: center;
+  margin-left: 550px;
+  
+}
+
+
+
+/* Estilos do Conteúdo Principal */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.151);
+}
+
+/* Estilos do Formulário */
+.event-form {
+  margin-bottom: 20px;
+}
+
+.event-form label,
+.event-form input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Estilos da Lista de Eventos */
+.event-list {
+  border-top: 1px solid #60ef27;
+  padding-top: 20px;
+}
+
+.event {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(107, 249, 79, 0.42);
+}
+
+/* Estilos da Barra de Progresso */
+.progress {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.progress p {
+  font-size: 18px;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #69db34;
+  border-radius: 5px;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Estilos Responsivos */
+@media screen and (max-width: 600px) {
+  header {
+      font-size: 24px;
+  }
+
+  main {
+      padding: 1rem; /* Reduzir o padding para telas menores */
+  }
+
+  .event {
+      padding: 8px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+      font-size: 20px;
+  }
+
+  main {
+      padding: 0.5rem; /* Reduzir ainda mais o padding para telas muito pequenas */
+  }
+
+  .event {
+      padding: 6px;
+  }
+}
